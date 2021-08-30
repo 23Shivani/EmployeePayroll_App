@@ -1,7 +1,6 @@
 //UC-1 To Modify Employee Payroll Class with new Attributes and Getters & Setters
 class EmployeePayrollData {
 
-
     get id() {
         return this._id;
     }
@@ -72,9 +71,10 @@ class EmployeePayrollData {
     toString() {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const empDate = !startDate ? "undefined" : this.startDate.toLocaleDateString("en-us", options);
-        return "id=" + this.id + ",name='" + this.name + ", gender='" + this.gender + ", profilePic='" 
-                        + this.profilePic +", deparment=" + this.deparment + ", salary=" +this.salary 
-                        + ", startDate=" + empDate + ",note=" + this.note;
+        return "id=" + this.id + ",name='" + this.name + ", gender='" +
+            this.gender + ", profilePic='" + this.profilePic +
+            ", deparment=" + this.deparment + ", salary=" +
+            this.salary + ", startDate=" + empDate + ",note=" + this.note;
     }
 
 }
